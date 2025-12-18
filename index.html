@@ -1,320 +1,487 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" data-theme="dark">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Mahesh Chitakoti — AI Developer building production-grade RAG systems, LLM integrations, and scalable full-stack applications.">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Mahesh Chitakoti — AI Developer building production-grade RAG systems, LLM integrations, and scalable full-stack applications."
+    />
     <title>Mahesh Chitakoti — AI Developer</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <!-- Navigation -->
     <header class="header" id="header">
-        <nav class="nav container">
-            <a href="#" class="logo">MC</a>
-            <div class="nav-links" id="navLinks">
-                <a href="#work">Work</a>
-                <a href="#about">About</a>
-                <a href="#contact">Contact</a>
-            </div>
-            <div class="nav-actions">
-                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
-                    <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                        <circle cx="12" cy="12" r="5"/>
-                        <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
-                    </svg>
-                    <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
-                    </svg>
-                </button>
-                <a href="#contact" class="nav-cta">Get in touch</a>
-            </div>
-            <button class="menu-toggle" id="menuToggle" aria-label="Menu">
-                <span></span>
-                <span></span>
-            </button>
-        </nav>
+      <nav class="nav container">
+        <a href="#" class="logo">MC</a>
+        <div class="nav-links" id="navLinks">
+          <a href="#work">Work</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="nav-actions">
+          <button
+            class="theme-toggle"
+            id="themeToggle"
+            aria-label="Toggle theme"
+          >
+            <svg
+              class="icon-sun"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+            >
+              <circle cx="12" cy="12" r="5" />
+              <path
+                d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"
+              />
+            </svg>
+            <svg
+              class="icon-moon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+            >
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+            </svg>
+          </button>
+          <a href="#contact" class="nav-cta">Get in touch</a>
+        </div>
+        <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
     </header>
 
     <!-- Mobile Menu -->
     <div class="mobile-menu" id="mobileMenu">
-        <nav class="mobile-nav">
-            <a href="#work">Work</a>
-            <a href="#about">About</a>
-            <a href="#contact">Contact</a>
-        </nav>
+      <nav class="mobile-nav">
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
     </div>
 
     <main>
-        <!-- Hero -->
-        <section class="hero">
-            <div class="container">
-                <p class="hero-label">AI Developer</p>
-                <h1 class="hero-title">Hi, I'm Mahesh.<br>I build AI systems that ship.</h1>
-                <p class="hero-desc">Full-stack developer specializing in RAG architectures, LLM integrations, and production-grade AI applications. Currently building with OpenAI, LangChain, and vector databases.</p>
-                <div class="hero-actions">
-                    <a href="#work" class="btn btn-primary">See my work</a>
-                    <a href="#contact" class="btn btn-secondary">Let's talk</a>
-                    <a href="CV_Mahesh_Chitakoti_2025.pdf" class="btn btn-secondary" target="_blank" download>Download CV</a>
+      <!-- Hero -->
+      <section class="hero">
+        <div class="container">
+          <p class="hero-label">AI Developer</p>
+          <h1 class="hero-title">
+            Hi, I'm Mahesh.<br />I build AI systems that ship.
+          </h1>
+          <p class="hero-desc">
+            Full-stack developer specializing in RAG architectures, LLM
+            integrations, and production-grade AI applications. Currently
+            building with OpenAI, LangChain, and vector databases.
+          </p>
+          <div class="hero-actions">
+            <a href="#work" class="btn btn-primary">See my work</a>
+            <a href="#contact" class="btn btn-secondary">Let's talk</a>
+            <a
+              href="CV_Mahesh_Chitakoti_2025.pdf"
+              class="btn btn-secondary"
+              target="_blank"
+              download
+              >Download CV</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- Credentials Bar -->
+      <section class="trust-bar">
+        <div class="container">
+          <p class="trust-label">Certifications</p>
+          <div class="trust-logos">
+            <span>Oracle AI Vector Search</span>
+            <span>Oracle GenAI Professional</span>
+            <span>Columbia ML</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Work/Projects -->
+      <section id="work" class="section">
+        <div class="container">
+          <div class="section-header">
+            <h2>Selected Work</h2>
+            <p>Production AI systems and full-stack applications</p>
+          </div>
+
+          <div class="projects">
+            <article class="project">
+              <div class="project-info">
+                <span class="project-tag">AI Platform</span>
+                <h3>WorkBridge</h3>
+                <p>
+                  AI-powered platform connecting students with real-world
+                  industry projects. Built RAG pipelines using LangChain + GPT-4
+                  for intelligent project matching with 90%+ recommendation
+                  accuracy. Implemented semantic search with Pinecone vector
+                  embeddings.
+                </p>
+                <div class="project-meta">
+                  <span>MERN</span>
+                  <span>OpenAI</span>
+                  <span>LangChain</span>
+                  <span>Pinecone</span>
+                  <span>AWS</span>
                 </div>
+              </div>
+              <div class="project-visual">
+                <div class="project-preview" style="--accent: 250"></div>
+              </div>
+            </article>
+
+            <article class="project">
+              <div class="project-info">
+                <span class="project-tag">RAG System</span>
+                <h3>News RAG Chatbot</h3>
+                <p>
+                  AI-powered news query system using Gemini API and Qdrant
+                  vector database. Enables natural language queries over news
+                  articles with context-aware responses and source citations.
+                </p>
+                <div class="project-meta">
+                  <span>Gemini API</span>
+                  <span>Qdrant</span>
+                  <span>Python</span>
+                  <span>FastAPI</span>
+                </div>
+              </div>
+              <div class="project-visual">
+                <div class="project-preview" style="--accent: 200"></div>
+              </div>
+            </article>
+
+            <article class="project">
+              <div class="project-info">
+                <span class="project-tag">Fintech</span>
+                <h3>Tradiofy</h3>
+                <p>
+                  Crypto trading platform with ML-powered fraud detection. Built
+                  real-time transaction monitoring and risk assessment systems
+                  to identify suspicious patterns.
+                </p>
+                <div class="project-meta">
+                  <span>Node.js</span>
+                  <span>ML</span>
+                  <span>PostgreSQL</span>
+                  <span>Redis</span>
+                </div>
+              </div>
+              <div class="project-visual">
+                <div class="project-preview" style="--accent: 150"></div>
+              </div>
+            </article>
+
+            <article class="project">
+              <div class="project-info">
+                <span class="project-tag">Automation</span>
+                <h3>Workflow Automation System</h3>
+                <p>
+                  NestJS + Google Workspace automation executing 1K+ workflows
+                  daily. Intelligent routing engine for bid processing and
+                  automated financial operations (receipts, POs, compliance).
+                </p>
+                <div class="project-meta">
+                  <span>NestJS</span>
+                  <span>Google APIs</span>
+                  <span>Microservices</span>
+                </div>
+              </div>
+              <div class="project-visual">
+                <div class="project-preview" style="--accent: 30"></div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section id="about" class="section section-alt">
+        <div class="container">
+          <div class="about-layout">
+            <div class="about-content">
+              <h2>About</h2>
+              <div class="about-text">
+                <p>
+                  I'm a full-stack developer turned AI engineer, currently
+                  focused on building production RAG systems, LLM integrations,
+                  and scalable applications. I work across the entire stack—from
+                  React frontends to Node.js microservices to vector databases.
+                </p>
+                <p>
+                  With experience at startups scaling MVPs to thousands of users
+                  and building enterprise automation systems, I understand both
+                  fast iteration and production reliability.
+                </p>
+                <p>
+                  I hold certifications in Oracle AI Vector Search, Oracle Cloud
+                  GenAI, and Columbia University's Machine Learning program. I'm
+                  passionate about turning complex AI capabilities into
+                  practical, user-facing products.
+                </p>
+              </div>
             </div>
-        </section>
-
-        <!-- Credentials Bar -->
-        <section class="trust-bar">
-            <div class="container">
-                <p class="trust-label">Certifications</p>
-                <div class="trust-logos">
-                    <span>Oracle AI Vector Search</span>
-                    <span>Oracle GenAI Professional</span>
-                    <span>Columbia ML</span>
-                </div>
+            <div class="about-skills">
+              <div class="skill-group">
+                <h4>Frontend</h4>
+                <ul>
+                  <li>React / Next.js</li>
+                  <li>TypeScript</li>
+                  <li>Redux / Context</li>
+                  <li>Tailwind CSS</li>
+                </ul>
+              </div>
+              <div class="skill-group">
+                <h4>Backend</h4>
+                <ul>
+                  <li>Node.js / Express</li>
+                  <li>NestJS</li>
+                  <li>GraphQL / REST</li>
+                  <li>Microservices</li>
+                </ul>
+              </div>
+              <div class="skill-group">
+                <h4>AI/ML</h4>
+                <ul>
+                  <li>OpenAI / Gemini</li>
+                  <li>LangChain / RAG</li>
+                  <li>Pinecone / Qdrant</li>
+                  <li>Prompt Engineering</li>
+                </ul>
+              </div>
+              <div class="skill-group">
+                <h4>Infrastructure</h4>
+                <ul>
+                  <li>AWS / GCP / Azure</li>
+                  <li>Docker / K8s</li>
+                  <li>PostgreSQL / MongoDB</li>
+                  <li>Redis</li>
+                </ul>
+              </div>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
 
-        <!-- Work/Projects -->
-        <section id="work" class="section">
-            <div class="container">
-                <div class="section-header">
-                    <h2>Selected Work</h2>
-                    <p>Production AI systems and full-stack applications</p>
+      <!-- Experience -->
+      <section class="section">
+        <div class="container">
+          <div class="section-header">
+            <h2>Experience</h2>
+          </div>
+          <div class="experience-list">
+            <div class="experience-item current">
+              <div class="exp-header">
+                <div>
+                  <h3>AI Developer</h3>
+                  <p class="exp-company">SAHIONEXT Technology Pvt. Ltd.</p>
                 </div>
-
-                <div class="projects">
-                    <article class="project">
-                        <div class="project-info">
-                            <span class="project-tag">AI Platform</span>
-                            <h3>WorkBridge</h3>
-                            <p>AI-powered platform connecting students with real-world industry projects. Built RAG pipelines using LangChain + GPT-4 for intelligent project matching with 90%+ recommendation accuracy. Implemented semantic search with Pinecone vector embeddings.</p>
-                            <div class="project-meta">
-                                <span>MERN</span>
-                                <span>OpenAI</span>
-                                <span>LangChain</span>
-                                <span>Pinecone</span>
-                                <span>AWS</span>
-                            </div>
-                        </div>
-                        <div class="project-visual">
-                            <div class="project-preview" style="--accent: 250"></div>
-                        </div>
-                    </article>
-
-                    <article class="project">
-                        <div class="project-info">
-                            <span class="project-tag">RAG System</span>
-                            <h3>News RAG Chatbot</h3>
-                            <p>AI-powered news query system using Gemini API and Qdrant vector database. Enables natural language queries over news articles with context-aware responses and source citations.</p>
-                            <div class="project-meta">
-                                <span>Gemini API</span>
-                                <span>Qdrant</span>
-                                <span>Python</span>
-                                <span>FastAPI</span>
-                            </div>
-                        </div>
-                        <div class="project-visual">
-                            <div class="project-preview" style="--accent: 200"></div>
-                        </div>
-                    </article>
-
-                    <article class="project">
-                        <div class="project-info">
-                            <span class="project-tag">Fintech</span>
-                            <h3>Tradiofy</h3>
-                            <p>Crypto trading platform with ML-powered fraud detection. Built real-time transaction monitoring and risk assessment systems to identify suspicious patterns.</p>
-                            <div class="project-meta">
-                                <span>Node.js</span>
-                                <span>ML</span>
-                                <span>PostgreSQL</span>
-                                <span>Redis</span>
-                            </div>
-                        </div>
-                        <div class="project-visual">
-                            <div class="project-preview" style="--accent: 150"></div>
-                        </div>
-                    </article>
-
-                    <article class="project">
-                        <div class="project-info">
-                            <span class="project-tag">Automation</span>
-                            <h3>Workflow Automation System</h3>
-                            <p>NestJS + Google Workspace automation executing 1K+ workflows daily. Intelligent routing engine for bid processing and automated financial operations (receipts, POs, compliance).</p>
-                            <div class="project-meta">
-                                <span>NestJS</span>
-                                <span>Google APIs</span>
-                                <span>Microservices</span>
-                            </div>
-                        </div>
-                        <div class="project-visual">
-                            <div class="project-preview" style="--accent: 30"></div>
-                        </div>
-                    </article>
-                </div>
+                <span class="exp-date">Oct 2025 – Present</span>
+              </div>
+              <p class="exp-desc">
+                Building production AI systems including RAG pipelines, LLM
+                integrations, and vector search implementations. Working on
+                end-to-end AI/ML solutions.
+              </p>
             </div>
-        </section>
-
-        <!-- About -->
-        <section id="about" class="section section-alt">
-            <div class="container">
-                <div class="about-layout">
-                    <div class="about-content">
-                        <h2>About</h2>
-                        <div class="about-text">
-                            <p>I'm a full-stack developer turned AI engineer, currently focused on building production RAG systems, LLM integrations, and scalable applications. I work across the entire stack—from React frontends to Node.js microservices to vector databases.</p>
-                            <p>With experience at startups scaling MVPs to thousands of users and building enterprise automation systems, I understand both fast iteration and production reliability.</p>
-                            <p>I hold certifications in Oracle AI Vector Search, Oracle Cloud GenAI, and Columbia University's Machine Learning program. I'm passionate about turning complex AI capabilities into practical, user-facing products.</p>
-                        </div>
-                    </div>
-                    <div class="about-skills">
-                        <div class="skill-group">
-                            <h4>Frontend</h4>
-                            <ul>
-                                <li>React / Next.js</li>
-                                <li>TypeScript</li>
-                                <li>Redux / Context</li>
-                                <li>Tailwind CSS</li>
-                            </ul>
-                        </div>
-                        <div class="skill-group">
-                            <h4>Backend</h4>
-                            <ul>
-                                <li>Node.js / Express</li>
-                                <li>NestJS</li>
-                                <li>GraphQL / REST</li>
-                                <li>Microservices</li>
-                            </ul>
-                        </div>
-                        <div class="skill-group">
-                            <h4>AI/ML</h4>
-                            <ul>
-                                <li>OpenAI / Gemini</li>
-                                <li>LangChain / RAG</li>
-                                <li>Pinecone / Qdrant</li>
-                                <li>Prompt Engineering</li>
-                            </ul>
-                        </div>
-                        <div class="skill-group">
-                            <h4>Infrastructure</h4>
-                            <ul>
-                                <li>AWS / GCP / Azure</li>
-                                <li>Docker / K8s</li>
-                                <li>PostgreSQL / MongoDB</li>
-                                <li>Redis</li>
-                            </ul>
-                        </div>
-                    </div>
+            <div class="experience-item">
+              <div class="exp-header">
+                <div>
+                  <h3>Full Stack Developer</h3>
+                  <p class="exp-company">PearlThoughts · Contract</p>
                 </div>
+                <span class="exp-date">Feb 2025 – Aug 2025</span>
+              </div>
+              <p class="exp-desc">
+                Built automation systems with NestJS and Google Workspace APIs.
+                Designed intelligent routing engines and automated financial
+                operations.
+              </p>
             </div>
-        </section>
-
-        <!-- Experience -->
-        <section class="section">
-            <div class="container">
-                <div class="section-header">
-                    <h2>Experience</h2>
+            <div class="experience-item">
+              <div class="exp-header">
+                <div>
+                  <h3>Full Stack Developer</h3>
+                  <p class="exp-company">The DevOps Team · Bangalore</p>
                 </div>
-                <div class="experience-list">
-                    <div class="experience-item">
-                        <div class="exp-header">
-                            <div>
-                                <h3>Full Stack Developer</h3>
-                                <p class="exp-company">PearlThoughts · Contract</p>
-                            </div>
-                            <span class="exp-date">Feb 2025 – Aug 2025</span>
-                        </div>
-                        <p class="exp-desc">Built automation systems with NestJS and Google Workspace APIs. Designed intelligent routing engines and automated financial operations.</p>
-                    </div>
-                    <div class="experience-item">
-                        <div class="exp-header">
-                            <div>
-                                <h3>Full Stack Developer</h3>
-                                <p class="exp-company">The DevOps Team · Bangalore</p>
-                            </div>
-                            <span class="exp-date">Oct 2023 – Jan 2025</span>
-                        </div>
-                        <p class="exp-desc">Scaled MVP to 5K users with ML-powered matching. Optimized Node.js APIs, built analytics pipelines, and deployed CI/CD for zero-downtime releases.</p>
-                    </div>
-                </div>
+                <span class="exp-date">Oct 2023 – Jan 2025</span>
+              </div>
+              <p class="exp-desc">
+                Scaled MVP to 5K users with ML-powered matching. Optimized
+                Node.js APIs, built analytics pipelines, and deployed CI/CD for
+                zero-downtime releases.
+              </p>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
 
-        <!-- Contact -->
-        <section id="contact" class="section section-alt">
-            <div class="container">
-                <div class="contact-layout">
-                    <div class="contact-info">
-                        <h2>Let's work together</h2>
-                        <p>Interested in AI solutions for your product? I'm available for contract work, consulting, and full-time opportunities.</p>
-                        <div class="contact-links">
-                            <a href="mailto:maheshchitkoti@gmail.com" class="contact-link">
-                                <span class="link-label">Email</span>
-                                <span class="link-value">maheshchitkoti@gmail.com</span>
-                            </a>
-                            <a href="https://linkedin.com/in/maheshchitakoti" class="contact-link" target="_blank">
-                                <span class="link-label">LinkedIn</span>
-                                <span class="link-value">linkedin.com/in/maheshchitakoti</span>
-                            </a>
-                            <a href="https://github.com/maheshchitakoti" class="contact-link" target="_blank">
-                                <span class="link-label">GitHub</span>
-                                <span class="link-value">github.com/maheshchitakoti</span>
-                            </a>
-                            <a href="CV_Mahesh_Chitakoti_2025.pdf" class="contact-link" target="_blank" download>
-                                <span class="link-label">Resume</span>
-                                <span class="link-value">Download CV (PDF)</span>
-                            </a>
-                        </div>
-                    </div>
-                    <form class="contact-form" id="contactForm">
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="name">Name</label>
-                                <input type="text" id="name" name="name" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="email">Email</label>
-                                <input type="email" id="email" name="email" required>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea id="message" name="message" rows="5" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Send message</button>
-                    </form>
-                </div>
+      <!-- Contact -->
+      <section id="contact" class="section section-alt">
+        <div class="container">
+          <div class="contact-layout">
+            <div class="contact-info">
+              <h2>Let's work together</h2>
+              <p>
+                Interested in AI solutions for your product? I'm available for
+                contract work, consulting, and full-time opportunities.
+              </p>
+              <div class="contact-links">
+                <a href="mailto:maheshchitkoti@gmail.com" class="contact-link">
+                  <span class="link-label">Email</span>
+                  <span class="link-value">maheshchitkoti@gmail.com</span>
+                </a>
+                <a
+                  href="https://linkedin.com/in/maheshchitakoti"
+                  class="contact-link"
+                  target="_blank"
+                >
+                  <span class="link-label">LinkedIn</span>
+                  <span class="link-value"
+                    >linkedin.com/in/maheshchitakoti</span
+                  >
+                </a>
+                <a
+                  href="https://github.com/maheshchitakoti"
+                  class="contact-link"
+                  target="_blank"
+                >
+                  <span class="link-label">GitHub</span>
+                  <span class="link-value">github.com/maheshchitakoti</span>
+                </a>
+                <a
+                  href="CV_Mahesh_Chitakoti_2025.pdf"
+                  class="contact-link"
+                  target="_blank"
+                  download
+                >
+                  <span class="link-label">Resume</span>
+                  <span class="link-value">Download CV (PDF)</span>
+                </a>
+              </div>
             </div>
-        </section>
+            <form
+              class="contact-form"
+              id="contactForm"
+              action="https://formspree.io/f/xjgbbazl"
+              method="POST"
+            >
+              <!-- Hidden helpers -->
+              <input
+                type="hidden"
+                name="_subject"
+                value="New Portfolio Message — Mahesh Chitakoti"
+              />
+              <input type="hidden" name="_template" value="table" />
+              <input type="hidden" name="_captcha" value="false" />
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="name">Name</label>
+                  <input type="text" id="name" name="name" required />
+                </div>
+
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" required />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  required
+                ></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary">
+                Send message
+              </button>
+
+              <p class="form-feedback" id="formFeedback"></p>
+            </form>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <a href="#" class="logo">MC</a>
-                <p>© 2025 Mahesh Chitakoti</p>
-                <div class="footer-links">
-                    <a href="https://github.com/maheshchitakoti" aria-label="GitHub" target="_blank">
-                        <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
-                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                        </svg>
-                    </a>
-                    <a href="https://linkedin.com/in/maheshchitakoti" aria-label="LinkedIn" target="_blank">
-                        <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
-                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-                        </svg>
-                    </a>
-                    <a href="https://twitter.com/maheshchitakoti" aria-label="Twitter" target="_blank">
-                        <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
-                            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
-                        </svg>
-                    </a>
-                </div>
-            </div>
+      <div class="container">
+        <div class="footer-content">
+          <a href="#" class="logo">MC</a>
+          <p>© 2025 Mahesh Chitakoti</p>
+          <div class="footer-links">
+            <a
+              href="https://github.com/maheshchitakoti"
+              aria-label="GitHub"
+              target="_blank"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                width="20"
+                height="20"
+              >
+                <path
+                  d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                />
+              </svg>
+            </a>
+            <a
+              href="https://linkedin.com/in/maheshchitakoti"
+              aria-label="LinkedIn"
+              target="_blank"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                width="20"
+                height="20"
+              >
+                <path
+                  d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+                />
+              </svg>
+            </a>
+            <a
+              href="https://twitter.com/maheshchitakoti"
+              aria-label="Twitter"
+              target="_blank"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                width="20"
+                height="20"
+              >
+                <path
+                  d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
+                />
+              </svg>
+            </a>
+          </div>
         </div>
+      </div>
     </footer>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

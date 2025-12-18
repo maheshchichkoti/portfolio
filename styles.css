@@ -680,6 +680,27 @@ p {
     line-height: 1.7;
 }
 
+/* Current role highlight */
+.experience-item.current {
+    border-color: var(--accent);
+    background: var(--accent-muted);
+}
+
+.experience-item.current .exp-company::after {
+    content: 'Current';
+    display: inline-block;
+    margin-left: var(--space-sm);
+    font-size: 0.625rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--accent);
+    background: var(--bg-primary);
+    padding: 2px 6px;
+    border-radius: var(--radius-sm);
+    vertical-align: middle;
+}
+
 /* =============================================
    Contact
    ============================================= */

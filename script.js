@@ -133,12 +133,13 @@ function initScrollReveal() {
     });
 }
 
-/* Contact Form */
+/* Contact Form - Formspree Integration */
 function initContactForm() {
     const form = document.getElementById('contactForm');
+    const feedback = document.getElementById('formFeedback');
     if (!form) return;
     
-    form.addEventListener('submit', (e) => {
+    form.addEventListener('submit', async (e) => {
         e.preventDefault();
         
         const btn = form.querySelector('button[type="submit"]');
@@ -148,20 +149,49 @@ function initContactForm() {
         btn.textContent = 'Sending...';
         btn.disabled = true;
         btn.style.opacity = '0.7';
+        if (feedback) feedback.textContent = '';
         
-        // Simulate submission
-        setTimeout(() => {
-            btn.textContent = 'Sent!';
-            btn.style.background = '#10b981';
+        try {
+            const formData = new FormData(form);
+            const response = await fetch(form.action, {
+                method: 'POST',
+                body: formData,
+                headers: { 'Accept': 'application/json' }
+            });
+            
+            if (response.ok) {
+                btn.textContent = 'Sent!';
+                btn.style.background = '#10b981';
+                btn.style.opacity = '1';
+                if (feedback) {
+                    feedback.textContent = 'Thanks for your message! I\'ll get back to you soon.';
+                    feedback.className = 'form-feedback success';
+                }
+                form.reset();
+                
+                setTimeout(() => {
+                    btn.textContent = originalText;
+                    btn.style.background = '';
+                    btn.disabled = false;
+                }, 3000);
+            } else {
+                throw new Error('Form submission failed');
+            }
+        } catch (error) {
+            btn.textContent = 'Error';
+            btn.style.background = '#ef4444';
             btn.style.opacity = '1';
+            if (feedback) {
+                feedback.textContent = 'Something went wrong. Please try again or email directly.';
+                feedback.className = 'form-feedback error';
+            }
             
             setTimeout(() => {
                 btn.textContent = originalText;
                 btn.style.background = '';
                 btn.disabled = false;
-                form.reset();
-            }, 2000);
-        }, 800);
+            }, 3000);
+        }
     });
 }
 
